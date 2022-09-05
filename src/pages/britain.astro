@@ -1,16 +1,18 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Card from "../components/Card.astro";
+import Dropdown from '../components/nav/Dropdown.astro';
+
 ---
 
-<Layout title="Family History.">
-  <section class="bg-teal-200">
+<Layout title="Family History">
+  <section class="bg-teal-200 one">
     <h1 class="text-center text-purple-500 text-font-sans text-6xl">
       Welcome to Family History Tips
     </h1>
     <p class="text-center text-purple-400 text-font-sans text-3xl">
       Informing you on what information is available and where to find them.
     </p>
+    <Dropdown/>
     <br />
 
     <div class="sm:grid cols-1 md:grid grid-cols-2 gap-4">
@@ -42,17 +44,12 @@ import Card from "../components/Card.astro";
   </section>
 </Layout>
 
-<Card
-  href="https://astro.build/integrations/"
-  title="Integrations"
-  body="Supercharge your project with new frameworks and libraries."
-/>
+
 
 <style>
   .one {
     text-align: center;
-    margin-top: 50px;
-    margin-left: 100px;
-    margin-right: 100px;
+    
+   
   }
 </style>
