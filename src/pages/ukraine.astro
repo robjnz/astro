@@ -1,0 +1,129 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Dropdown from "../components/nav/Dropdown.astro";
+import Card from "../components/Card.astro";
+---
+
+<Layout title="Ukraine">
+  <section class="text-center bg-teal-200">
+    <h1
+      class="ml-8 mt-3 inline-block text-center text-purple-500 text-font-sans text-4xl"
+    >
+      <div class="h-10 w-14 inline-block">
+        <img
+          src="https://res.cloudinary.com/dzhbfdfa5/image/upload/c_scale,h_200,w_300/v1638978523/webp/ukraine-flag.webp"
+          alt="image of Ukraine flag"
+        />
+      </div>
+
+      Ukraine Family History Resourses
+    </h1>
+    <br />
+
+    <section class="bg-teal-200">
+      <main>
+        <ul role="list" class="link-card-grid">
+          <Card
+            href="https://bit.ly/35ljvvG"
+            title="Archives"
+            body="Ukraine State Archives."
+          />
+          <Card
+            href="https://bit.ly/35SEKp5"
+            title="Dnipropetrovsk"
+            body="Dnipropetrovsk State Archives."
+          />
+          <Card
+            href="https://bit.ly/3yQ0peY"
+            title="Kyiv"
+            body="Birth, death and marriage records 1919-1945."
+          />
+          <Card
+            href="https://bit.ly/3BBg0jh"
+            title="Memory Book"
+            body="Search ww2 Ukraine Partisans 1941 - 1945"
+          />
+          <Card
+            href="http://bit.ly/33c5lJh"
+            title="Residents"
+            body="Database of Ukrainian residents born between 1650 and 1920"
+          />
+          <Card
+            href="https://bit.ly/3pdqA9N"
+            title="Russian & Ukraine"
+            body="Where to find Russian & Ukraine records."
+          />
+
+          <Card
+            href="https://bit.ly/3F4KrQ1"
+            title="1917-1924"
+            body="Search the database for Ukrainian soldiers."
+          />
+        </ul>
+      </main>
+
+      <Dropdown />
+      <div class="mt-72">.</div>
+    </section>
+  </section>
+</Layout>
+
+<style>
+  :root {
+    --astro-gradient: linear-gradient(0deg, #4f39fa, #da62c4);
+  }
+
+  h1 {
+    margin: 2rem 0;
+  }
+
+  main {
+    margin: auto;
+    padding: 1em;
+    max-width: 60ch;
+  }
+
+  .text-gradient {
+    font-weight: 900;
+    background-image: var(--astro-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 100% 200%;
+    background-position-y: 100%;
+    border-radius: 0.4rem;
+    animation: pulse 4s ease-in-out infinite;
+  }
+
+  @keyframes pulse {
+    0%,
+    100% {
+      background-position-y: 0%;
+    }
+    50% {
+      background-position-y: 80%;
+    }
+  }
+
+  .instructions {
+    line-height: 1.6;
+    margin: 1rem 0;
+    background: #4f39fa;
+    padding: 1rem;
+    border-radius: 0.4rem;
+    color: var(--color-bg);
+  }
+
+  .instructions code {
+    font-size: 0.875em;
+    border: 0.1em solid var(--color-border);
+    border-radius: 4px;
+    padding: 0.15em 0.25em;
+  }
+
+  .link-card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+    gap: 1rem;
+    padding: 0;
+  }
+</style>
