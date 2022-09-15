@@ -1,0 +1,145 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Dropdown from "../components/nav/Dropdown.astro";
+import Card from "../components/Card.astro";
+---
+
+<Layout title=" Shoah">
+  <section class="text-center bg-teal-200">
+    <h1
+      class="ml-8 mt-3 inline-block text-center text-purple-500 text-font-sans text-4xl"
+    >
+      <div class="h-10 w-14 inline-block mr-20">
+        <iframe
+          class="h-full w-20 object-fill"
+          title="candle flame"
+          src="https://giphy.com/embed/j7N0GKEWqZxNC"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+
+      Shoah Resourses
+    </h1>
+    <br />
+    <br />
+
+    <section class="bg-teal-200">
+      <main>
+        <ul role="list" class="link-card-grid">
+          <Card
+            href="https://bit.ly/2VdA3QJ"
+            title="Arolsen"
+            body="International tracing Service database."
+          />
+          <Card
+            href="http://bit.ly/2JIO7ts"
+            title="Auschwitz"
+            body="Search Auschwitz prisoners database."
+          />
+
+          <Card
+            href="https://bit.ly/3q9eE9x"
+            title="Austrian & Galisian"
+            body="Search Austrian & Galisian Victims of the Holocaust."
+          />
+          <Card
+            href="http://bit.ly/2Jv5v6D"
+            title="Camps"
+            body="List of camps."
+          />
+          <Card
+            href="https://bit.ly/3fjLI8E"
+            title="Deportations"
+            body="Search Memorial de la shoah deportation records."
+          />
+          <Card
+            href="http://bit.ly/2rcyjaR"
+            title="Holocaust Database"
+            body="Search JewishGen holocaust database."
+          />
+          <Card
+            href="https://bit.ly/3jjfQWx"
+            title="Holocaust records"
+            body="Free search ancestry holocaust records."
+          />
+          <Card
+            href="http://bit.ly/2JLIKd0"
+            title="Ushmm"
+            body="Holocaust Survivors and Victims Database."
+          />
+          <Card
+            href="http://bit.ly/2Jm04Iw"
+            title="Yad Vashem"
+            body="The central database of shoah victims."
+          />
+        </ul>
+        <br />
+        <br />
+      </main>
+
+      <Dropdown />
+      <div class="mt-72">.</div>
+    </section>
+  </section>
+</Layout>
+
+<style>
+  :root {
+    --astro-gradient: linear-gradient(0deg, #4f39fa, #da62c4);
+  }
+
+  h1 {
+    margin: 2rem 0;
+  }
+
+  main {
+    margin: auto;
+    padding: 1em;
+    max-width: 60ch;
+  }
+
+  .text-gradient {
+    font-weight: 900;
+    background-image: var(--astro-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 100% 200%;
+    background-position-y: 100%;
+    border-radius: 0.4rem;
+    animation: pulse 4s ease-in-out infinite;
+  }
+
+  @keyframes pulse {
+    0%,
+    100% {
+      background-position-y: 0%;
+    }
+    50% {
+      background-position-y: 80%;
+    }
+  }
+
+  .instructions {
+    line-height: 1.6;
+    margin: 1rem 0;
+    background: #4f39fa;
+    padding: 1rem;
+    border-radius: 0.4rem;
+    color: var(--color-bg);
+  }
+
+  .instructions code {
+    font-size: 0.875em;
+    border: 0.1em solid var(--color-border);
+    border-radius: 4px;
+    padding: 0.15em 0.25em;
+  }
+
+  .link-card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+    gap: 1rem;
+    padding: 0;
+  }
+</style>
