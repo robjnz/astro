@@ -1,0 +1,148 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Dropdown from "../components/nav/Dropdown.astro";
+import Card from "../components/Card.astro";
+---
+
+<Layout title="General">
+  <section class="text-center bg-teal-200">
+    <h1
+      class="ml-8 mt-3 inline-block text-center text-purple-500 text-font-sans text-4xl"
+    >
+      <div class="h-10 w-14 inline-block">
+        <img
+          src="https://res.cloudinary.com/dzhbfdfa5/image/upload/c_scale,h_200,w_300/v1639481977/webp/search.webp"
+          alt="image of man searching"
+        />
+      </div>
+
+      General Family History Resourses
+    </h1>
+    <br />
+
+    <section class="bg-teal-200">
+      <main>
+        <ul role="list" class="link-card-grid">
+          <Card
+            href="https://bit.ly/3lV1E4S"
+            title="Ahnenblatt"
+            body="Genealogy software."
+          />
+          <Card
+            href="https://bit.ly/2P0U8GJ"
+            title="Ancestry"
+            body="Largest genealogy website Sometimes available free in local libraries."
+          />
+          <Card
+            href="http://bit.ly/2I6KSPz"
+            title="Billion Graves"
+            body="Search cemetery records around the world."
+          />
+          <Card
+            href="http://bit.ly/3442Qd1"
+            title="Family Search"
+            body="Free access to family records held by the Mormons."
+          />
+          <Card
+            href="http://bit.ly/2I5p6M2"
+            title="Find A Grave"
+            body="Search cemetery records around the world."
+          />
+          <Card
+            href="http://bit.ly/2IaI3wT"
+            title="Find My Past"
+            body="Search the genealogy database."
+          />
+          <Card
+            href="https://bit.ly/2KtHa5o"
+            title="Geneanet"
+            body="Search the genealogy database."
+          />
+          <Card
+            href="https://bit.ly/3N4RE71"
+            title="Months"
+            body="Months of the year in every language."
+          />
+          <Card
+            href="https://bit.ly/3lmFlUl"
+            title="My Heritage"
+            body="Search the genealogy database."
+          />
+          <Card
+            href="http://bit.ly/3tiMV6S"
+            title="Prisoners of War"
+            body="Search the first world war prisoners of War archives 1914 - 1918."
+          />
+          <Card
+            href="https://bit.ly/3pMHs7H"
+            title="Transkribus"
+            body="Handwritting recognition software."
+          />
+        </ul>
+      </main>
+
+      <Dropdown />
+      <div class="mt-72">.</div>
+    </section>
+  </section>
+</Layout>
+
+<style>
+  :root {
+    --astro-gradient: linear-gradient(0deg, #4f39fa, #da62c4);
+  }
+
+  h1 {
+    margin: 2rem 0;
+  }
+
+  main {
+    margin: auto;
+    padding: 1em;
+    max-width: 60ch;
+  }
+
+  .text-gradient {
+    font-weight: 900;
+    background-image: var(--astro-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 100% 200%;
+    background-position-y: 100%;
+    border-radius: 0.4rem;
+    animation: pulse 4s ease-in-out infinite;
+  }
+
+  @keyframes pulse {
+    0%,
+    100% {
+      background-position-y: 0%;
+    }
+    50% {
+      background-position-y: 80%;
+    }
+  }
+
+  .instructions {
+    line-height: 1.6;
+    margin: 1rem 0;
+    background: #4f39fa;
+    padding: 1rem;
+    border-radius: 0.4rem;
+    color: var(--color-bg);
+  }
+
+  .instructions code {
+    font-size: 0.875em;
+    border: 0.1em solid var(--color-border);
+    border-radius: 4px;
+    padding: 0.15em 0.25em;
+  }
+
+  .link-card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+    gap: 1rem;
+    padding: 0;
+  }
+</style>

@@ -1,0 +1,143 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Dropdown from "../components/nav/Dropdown.astro";
+import Card from "../components/Card.astro";
+---
+
+<Layout title="General Jewish">
+  <section class="text-center bg-teal-200">
+    <h1
+      class="ml-8 mt-3 inline-block text-center text-purple-500 text-font-sans text-4xl"
+    >
+      <div class="h-10 w-14 inline-block">
+        <img
+          src="https://res.cloudinary.com/dzhbfdfa5/image/upload/c_scale,h_200,w_300/v1639481977/webp/search.webp"
+          alt="image of man searching"
+        />
+      </div>
+
+      General Jewish Family History Resourses
+    </h1>
+    <br />
+
+    <section class="bg-teal-200">
+      <main>
+        <ul role="list" class="link-card-grid">
+          <Card
+            href="http://bit.ly/330R55R"
+            title="Cemeteries"
+            body="Search the database for Jewish cemeteries records in Poland."
+          />
+          <Card
+            href="https://bit.ly/3y7d9g4"
+            title="Convert Date"
+            body="Convert the date from Gregorian calendar to Hebrew date."
+          />
+          <Card
+            href="http://bit.ly/2pwUJXv"
+            title="Jewish Gem's"
+            body="Jewish geaneology blogger."
+          />
+          <Card
+            href="http://bit.ly/2KxoBbV"
+            title="JewishGen"
+            body="Search free Jewish Genealogy Resourses."
+          />
+          <Card
+            href="https://bit.ly/3paTOpZ"
+            title="Jri Poland"
+            body="Search free Jewish Genealogy Records & Resourses."
+          />
+          <Card
+            href="http://bit.ly/2rn3G3j"
+            title="Hebrew"
+            body="Translate Hebrew to English."
+          />
+          <Card
+            href="https://bit.ly/3pQHvPL"
+            title="Routes To Roots"
+            body="Guide to what Jewish civil records are avaiable in eastern europe."
+          />
+          <Card
+            href="http://bit.ly/2QyNd9R"
+            title="Shtetl"
+            body="Information about towns in the pale of Settlemens"
+          />
+          <Card
+            href="https://bit.ly/3zEYcBs"
+            title="Simcha Spot"
+            body="Search simcha announcement in the orthodox comunity."
+          />
+          <Card
+            href="https://bit.ly/2Ybem8q"
+            title="View Mate"
+            body="Get some help with, translating your documents and photos, on the Jewishgen forum."
+          />
+        </ul>
+      </main>
+
+      <Dropdown />
+      <div class="mt-72">.</div>
+    </section>
+  </section>
+</Layout>
+
+<style>
+  :root {
+    --astro-gradient: linear-gradient(0deg, #4f39fa, #da62c4);
+  }
+
+  h1 {
+    margin: 2rem 0;
+  }
+
+  main {
+    margin: auto;
+    padding: 1em;
+    max-width: 60ch;
+  }
+
+  .text-gradient {
+    font-weight: 900;
+    background-image: var(--astro-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 100% 200%;
+    background-position-y: 100%;
+    border-radius: 0.4rem;
+    animation: pulse 4s ease-in-out infinite;
+  }
+
+  @keyframes pulse {
+    0%,
+    100% {
+      background-position-y: 0%;
+    }
+    50% {
+      background-position-y: 80%;
+    }
+  }
+
+  .instructions {
+    line-height: 1.6;
+    margin: 1rem 0;
+    background: #4f39fa;
+    padding: 1rem;
+    border-radius: 0.4rem;
+    color: var(--color-bg);
+  }
+
+  .instructions code {
+    font-size: 0.875em;
+    border: 0.1em solid var(--color-border);
+    border-radius: 4px;
+    padding: 0.15em 0.25em;
+  }
+
+  .link-card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+    gap: 1rem;
+    padding: 0;
+  }
+</style>
