@@ -1,0 +1,199 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Dropdown from "../components/nav/Dropdown.astro";
+import Card from "../components/Card.astro";
+---
+
+<Layout title="Video">
+  <section class="text-center bg-teal-200">
+    <h1
+      class="ml-8 mt-3 inline-block text-center text-purple-500 text-font-sans text-4xl"
+    >
+      <div class="h-10 w-14 inline-block">
+        <img
+          src="https://res.cloudinary.com/dzhbfdfa5/image/upload/c_scale,h_200,w_300/v1639596218/webp/video_icon.webp"
+          alt="image of video icon"
+        />
+      </div>
+
+      Family History Youtube video's
+    </h1>
+    <br />
+    <main>
+      <div class="grid grid-cols-2 gap-4">
+        <h2 class="text-base text-gray-700">
+          How to find <br /> where a Jewish person<br /> is buried in London.
+
+          <iframe
+            class="h-32 w-full object-fill"
+            title="burial jewish London uk"
+            src="https://www.youtube.com/embed/w5skmEm843c"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </h2>
+        <h2 class="text-base text-gray-700">
+          How to find someone <br />who has changed their name in the UK.
+          <iframe
+            class="h-32 w-full object-fill"
+            title="Marriage authorisation uk"
+            src="https://www.youtube.com/embed/8KpE5f4kXdk"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </h2>
+        <h2 class="text-base text-gray-700">
+          How to use <br />companies house records<br /> for family history research.
+
+          <iframe
+            class="h-32 w-full object-fill"
+            title="How to use companies house records for family history research"
+            src="https://www.youtube.com/embed/-zFJZrOScuM"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </h2>
+        <h2 class="text-base text-gray-700">
+          How to find a person<br /> on the electorial roll<br /> in the UK.
+
+          <iframe
+            class="h-32 w-full object-fill"
+            title="Electorial roll uk"
+            src="https://www.youtube.com/embed/by1hNIjuKWM"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </h2>
+        <h2 class="text-base text-gray-700">
+          How to find a <br />Naturalization certificate<br />
+          in the UK.
+          <iframe
+            class="h-32 w-full object-fill"
+            title="Naturalization certificate uk"
+            src="https://www.youtube.com/embed/vzGMUXkeDD4"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </h2>
+        <h2 class="text-base text-gray-700">
+          How to find a <br />Jewish marriage authorisation<br /> document in the
+          Uk.
+          <iframe
+            class="h-32 w-full object-fill"
+            title="Marriage authorisation uk"
+            src="https://www.youtube.com/embed/690fZvaE0Ek"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </h2>
+        <h2 class="text-base text-gray-700">
+          How to find a<br />
+          First world war service record,<br />
+          Royal Navy, Royal flying Corp<br /> & RAF.
+          <iframe
+            class="h-32 w-full object-fill"
+            title="First world war service record"
+            src="https://www.youtube.com/embed/MGLHGV2LP2I"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </h2>
+        <h2 class="text-base text-gray-700">
+          How to get a <br />copy of a Uk <br />will and letter <br />of probate.
+          <iframe
+            class="h-32 w-full object-fill"
+            title="Wills and probate uk"
+            src="https://www.youtube.com/embed/LOFKGhsCyHg"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </h2>
+      </div>
+    </main>
+
+    <Dropdown />
+    <div class="mt-72">.</div>
+  </section>
+</Layout>
+
+<style>
+  :root {
+    --astro-gradient: linear-gradient(0deg, #4f39fa, #da62c4);
+  }
+
+  h1 {
+    margin: 2rem 0;
+  }
+
+  main {
+    margin: auto;
+    padding: 1em;
+    max-width: 60ch;
+  }
+
+  .text-gradient {
+    font-weight: 900;
+    background-image: var(--astro-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 100% 200%;
+    background-position-y: 100%;
+    border-radius: 0.4rem;
+    animation: pulse 4s ease-in-out infinite;
+  }
+
+  @keyframes pulse {
+    0%,
+    100% {
+      background-position-y: 0%;
+    }
+    50% {
+      background-position-y: 80%;
+    }
+  }
+
+  .instructions {
+    line-height: 1.6;
+    margin: 1rem 0;
+    background: #4f39fa;
+    padding: 1rem;
+    border-radius: 0.4rem;
+    color: var(--color-bg);
+  }
+
+  .instructions code {
+    font-size: 0.875em;
+    border: 0.1em solid var(--color-border);
+    border-radius: 4px;
+    padding: 0.15em 0.25em;
+  }
+
+  .link-card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+    gap: 1rem;
+    padding: 0;
+  }
+  .work-card {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0.1);
+    padding: 1rem;
+    border-radius: 0.2rem;
+    color: #38b2ac;
+    background-color: #38b2ac;
+    font-size: medium;
+    font-family: Roberto;
+  }
+  #work-card {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0.1);
+    background: #38b2ac;
+    font-family: roberto;
+    color: #1a202c;
+    font-size: 1.25rem;
+  }
+  .one {
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 130px;
+    margin-right: 70px;
+  }
+</style>
