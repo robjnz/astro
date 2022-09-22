@@ -70,6 +70,14 @@
   dependencies:
     "prismjs" "^1.28.0"
 
+"@astrojs/sitemap@^1.0.0":
+  "integrity" "sha512-42GxuF5FP7RaKXZrwGLBLOX3hPv+Wl7ExJC43O0J5e34ojJkLeKf7QfwN1UwrJlqH0Ywi0Fm4/xGe482G09+wg=="
+  "resolved" "https://registry.npmjs.org/@astrojs/sitemap/-/sitemap-1.0.0.tgz"
+  "version" "1.0.0"
+  dependencies:
+    "sitemap" "^7.1.1"
+    "zod" "^3.17.3"
+
 "@astrojs/tailwind@^1.0.0":
   "version" "1.0.0"
   dependencies:
@@ -326,11 +334,6 @@
 "@polka/url@^1.0.0-next.20":
   "version" "1.0.0-next.21"
 
-"@popperjs/core@^2.9.3":
-  "integrity" "sha512-50/17A98tWUfQ176raKiOGXuYpLyyVMkxxG6oylzL3BPOlA6ADGdK7EYunSa4I064xerltq9TGXs8HmOk5E+vw=="
-  "resolved" "https://registry.npmjs.org/@popperjs/core/-/core-2.11.6.tgz"
-  "version" "2.11.6"
-
 "@proload/core@^0.3.2":
   "version" "0.3.3"
   dependencies:
@@ -389,11 +392,23 @@
   dependencies:
     "@types/unist" "*"
 
+"@types/node@*", "@types/node@^17.0.5":
+  "integrity" "sha512-w+tIMs3rq2afQdsPJlODhoUEKzFP1ayaoyl1CcnwtIlsVe7K7bA1NGm4s3PraqTLlXnbIN84zuBlxBWo1u9BLw=="
+  "resolved" "https://registry.npmjs.org/@types/node/-/node-17.0.45.tgz"
+  "version" "17.0.45"
+
 "@types/parse5@^6.0.0":
   "version" "6.0.3"
 
 "@types/resolve@^1.17.0":
   "version" "1.20.2"
+
+"@types/sax@^1.2.1":
+  "integrity" "sha512-pSAff4IAxJjfAXUG6tFkO7dsSbTmf8CtUpfhhZ5VhkRpC4628tJhh3+V6H1E+/Gs9piSzYKT5yzHO5M4GG9jkw=="
+  "resolved" "https://registry.npmjs.org/@types/sax/-/sax-1.2.4.tgz"
+  "version" "1.2.4"
+  dependencies:
+    "@types/node" "*"
 
 "@types/unist@*", "@types/unist@^2.0.0":
   "version" "2.0.6"
@@ -457,7 +472,7 @@
     "normalize-path" "^3.0.0"
     "picomatch" "^2.0.4"
 
-"arg@^5.0.2":
+"arg@^5.0.0", "arg@^5.0.2":
   "version" "5.0.2"
 
 "argparse@^1.0.7":
@@ -942,14 +957,6 @@
   dependencies:
     "micromatch" "^4.0.2"
     "pkg-dir" "^4.2.0"
-
-"flowbite@^1.5.3":
-  "integrity" "sha512-e2OHfndxTHtGMqcPqvqwg3gGLg57hmIDVgE/BazMDccgirQ0JEtirKnbZZ4WSOIEhNDgO9pJZuyC8rRlcMm6pQ=="
-  "resolved" "https://registry.npmjs.org/flowbite/-/flowbite-1.5.3.tgz"
-  "version" "1.5.3"
-  dependencies:
-    "@popperjs/core" "^2.9.3"
-    "mini-svg-data-uri" "^1.4.3"
 
 "formdata-polyfill@^4.0.10":
   "version" "4.0.10"
@@ -1679,11 +1686,6 @@
 "mimic-fn@^4.0.0":
   "version" "4.0.0"
 
-"mini-svg-data-uri@^1.4.3":
-  "integrity" "sha512-r9deDe9p5FJUPZAk3A59wGH7Ii9YrjjWw0jmw/liSbHl2CHiyXj6FcDXDu2K3TjVAXqiJdaw3xxwlZZr9E6nHg=="
-  "resolved" "https://registry.npmjs.org/mini-svg-data-uri/-/mini-svg-data-uri-1.4.4.tgz"
-  "version" "1.4.4"
-
 "minimist@^1.2.6":
   "version" "1.2.6"
 
@@ -2083,6 +2085,11 @@
   dependencies:
     "suf-log" "^2.5.3"
 
+"sax@^1.2.4":
+  "integrity" "sha512-NqVDv9TpANUjFm0N8uM5GxL36UgKi9/atZw+x7YFnQ8ckwFGKrl4xX4yWtrey3UJm5nP1kUbnYgLopqWNSRhWw=="
+  "resolved" "https://registry.npmjs.org/sax/-/sax-1.2.4.tgz"
+  "version" "1.2.4"
+
 "section-matter@^1.0.0":
   "version" "1.0.0"
   dependencies:
@@ -2131,6 +2138,16 @@
 
 "sisteransi@^1.0.5":
   "version" "1.0.5"
+
+"sitemap@^7.1.1":
+  "integrity" "sha512-mK3aFtjz4VdJN0igpIJrinf3EO8U8mxOPsTBzSsy06UtjZQJ3YY3o3Xa7zSc5nMqcMrRwlChHZ18Kxg0caiPBg=="
+  "resolved" "https://registry.npmjs.org/sitemap/-/sitemap-7.1.1.tgz"
+  "version" "7.1.1"
+  dependencies:
+    "@types/node" "^17.0.5"
+    "@types/sax" "^1.2.1"
+    "arg" "^5.0.0"
+    "sax" "^1.2.4"
 
 "slash@^4.0.0":
   "version" "4.0.0"
