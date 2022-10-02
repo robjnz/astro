@@ -10,11 +10,11 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^1.1.5",
-    "daisyui": "^2.25.0"
+    "astro": "^1.4.2",
+    "daisyui": "^2.31.0"
   },
   "devDependencies": {
     "@astrojs/sitemap": "^1.0.0",
-    "@astrojs/tailwind": "^1.0.0"
+    "@astrojs/tailwind": "^2.0.2"
   }
 }
